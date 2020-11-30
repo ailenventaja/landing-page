@@ -17,8 +17,14 @@ nav{
     justify-content: flex-start;
 }
 
+
+
 .active {
     border: 1px solid white;
+}
+
+.btn-shadow:focus{
+    box-shadow: 0 0 0 0.2rem rgb(237, 32, 97);
 }
 
 header{
