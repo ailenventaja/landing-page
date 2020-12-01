@@ -12,7 +12,6 @@ nav{
     position: fixed;
     top: 20%;
     left: 20%;
-    color: white;
     display: flex;
     justify-content: flex-start;
 }
