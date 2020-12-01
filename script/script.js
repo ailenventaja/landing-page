@@ -7,10 +7,17 @@ function navHighlighter() {
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 50;
     sectionId = current.getAttribute("id");
+    
     if (
       scrollY > sectionTop &&
       scrollY <= sectionTop + sectionHeight
     ){
+      if (sectionId == "nosotros" || sectionId == "galeria" || sectionId== "mapa")
+    {
+      document.querySelector("#nosotrosmenu").classList.add("active");
+    } else {
+    document.querySelector("#nosotrosmenu").classList.remove("active");
+    }
       document.querySelector("#navbar a[href*=" + sectionId + "]").classList.add("active");
     } else {
       document.querySelector("#navbar a[href*=" + sectionId + "]").classList.remove("active");
@@ -87,7 +94,7 @@ try{
 
     let capa = document.getElementById("cat");
 
-    elemento.innerHTML = `<div> <br><h5>Meow</h5> <br><img src="${file}" style="width:auto; margin:auto; max-width:500px" alt="Cat image"</div>`;
+    elemento.innerHTML = `<div> <br><h5>Meow</h5> <br><img src="${file}" style="width:auto; margin:auto; max-width:60%;max-height:60%" alt="Cat image"</div>`;
 
     
 
