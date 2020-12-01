@@ -19,9 +19,9 @@ nav{
 #whats-app{
     position: fixed;
     width: 3%;
-    margin-top: 42%;
+    bottom: 3%;
     z-index: 2;
-    margin-left: 96%;
+    right: 1%;
     opacity: 0.7;
 }
 
@@ -388,7 +388,7 @@ h1{
     }
     }
 
-@media screen and (max-width: 1190px)
+@media screen and (max-width: 600px)
 {
     #whats-app{
         display: none;
